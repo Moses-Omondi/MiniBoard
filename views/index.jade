@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+
+  a(href='/new') Entry-Form
+
+  each message in messages
+    p Message
+      ul
+        each val, key in message
+          li #{key} : #{val}

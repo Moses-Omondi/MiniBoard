@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+
+  form(method='POST' action='/new')
+    div.form-group
+      label(for='name') Name: <br>
+      input#name.form-control(type='text', placeholder='author-name' name='name')
+    <br>
+    div.form-group
+      label(for='email') Message: <br>
+      input#email.form-control(type='text', placeholder='text' name='message')
+    <br>
+    button.btn.btn-primary(type='submit') Post
+  </form>
+
